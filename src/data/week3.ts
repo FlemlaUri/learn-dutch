@@ -1,0 +1,542 @@
+import type { Week } from '../types'
+
+export const week3: Week = {
+  week: 3,
+  title: 'Se déplacer, gérer son temps, prendre rendez-vous',
+  focus:
+    "L'heure, les transports, la direction, et les deux outils grammaticaux qui décuplent ta capacité à parler : les verbes modaux et les verbes à particule.",
+  lessons: [
+    /* ------------------------------------------------------------ J15 */
+    {
+      id: 'd15',
+      day: 15,
+      week: 3,
+      title: 'L’heure, les jours, les mois',
+      goal: 'Dire l’heure à la néerlandaise — un système qui déroute au début.',
+      grammar: [
+        {
+          title: 'L’heure : on compte autour de la demie',
+          body:
+            "Le néerlandais ne dit pas « trois heures vingt » mais « dix avant la demie de trois ».\n- **drie uur** — 3h00\n- **kwart over drie** — 3h15 (un quart après trois)\n- **half vier** — 3h30 ⚠️ **la demie annonce l'heure suivante**. *half vier* = 3h30, pas 4h30. C'est le piège n°1.\n- **kwart voor vier** — 3h45\n- **tien over drie** — 3h10\n- **tien voor half vier** — 3h20 (dix avant la demie de quatre)\n- **tien over half vier** — 3h40\n- **vijf voor vier** — 3h55\nAstuce de survie : entre 3h16 et 3h44, tout se dit par rapport à **half vier**.\nPour demander : **Hoe laat is het?** — Quelle heure est-il ? / **Hoe laat…?** — À quelle heure… ?",
+          examples: [
+            { nl: 'Het is half acht.', fr: 'Il est 7 h 30.' },
+            { nl: 'De trein vertrekt om kwart over negen.', fr: 'Le train part à 9 h 15.' },
+            { nl: 'Ik kom om tien voor half zes.', fr: 'J’arrive à 17 h 20.' },
+          ],
+        },
+        {
+          title: 'Jours, mois, et les prépositions de temps',
+          body:
+            "Jours : **maandag, dinsdag, woensdag, donderdag, vrijdag, zaterdag, zondag** — jamais de majuscule.\nMois : januari, februari, maart, april, mei, juni, juli, augustus, september, oktober, november, december.\nPrépositions :\n- **om** + heure : *om acht uur*\n- **op** + jour ou date : *op maandag, op 3 mei*\n- **in** + mois, saison, année : *in juni, in de zomer, in 2026*\n- **’s ochtends / ’s middags / ’s avonds / ’s nachts** — le matin / l'après-midi / le soir / la nuit (habitude)",
+          examples: [
+            { nl: 'Op vrijdag werk ik niet.', fr: 'Le vendredi je ne travaille pas.' },
+            { nl: 'Ik sport ’s ochtends om zeven uur.', fr: 'Je fais du sport le matin à sept heures.' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd15-uur', nl: 'uur', fr: 'heure', article: 'het', hint: 'ür' },
+        { id: 'd15-minuut', nl: 'minuut', fr: 'minute', article: 'de' },
+        { id: 'd15-half', nl: 'half', fr: 'demi' },
+        { id: 'd15-kwart', nl: 'kwart', fr: 'quart', article: 'het' },
+        { id: 'd15-over', nl: 'over', fr: 'après (heure) / dans' },
+        { id: 'd15-voor', nl: 'voor', fr: 'avant / pour' },
+        { id: 'd15-maandag', nl: 'maandag', fr: 'lundi' },
+        { id: 'd15-dinsdag', nl: 'dinsdag', fr: 'mardi' },
+        { id: 'd15-woensdag', nl: 'woensdag', fr: 'mercredi', hint: 'VOUNS-dagh' },
+        { id: 'd15-donderdag', nl: 'donderdag', fr: 'jeudi' },
+        { id: 'd15-vrijdag', nl: 'vrijdag', fr: 'vendredi', hint: 'VRAÏ-dagh' },
+        { id: 'd15-zaterdag', nl: 'zaterdag', fr: 'samedi' },
+        { id: 'd15-zondag', nl: 'zondag', fr: 'dimanche' },
+        { id: 'd15-week', nl: 'week', fr: 'semaine', article: 'de' },
+        { id: 'd15-maand', nl: 'maand', fr: 'mois', article: 'de' },
+        { id: 'd15-ochtend', nl: 'ochtend', fr: 'matin', article: 'de' },
+        { id: 'd15-middag', nl: 'middag', fr: 'après-midi', article: 'de' },
+        { id: 'd15-avond', nl: 'avond', fr: 'soir', article: 'de' },
+        { id: 'd15-nacht', nl: 'nacht', fr: 'nuit', article: 'de' },
+        { id: 'd15-vroeg', nl: 'vroeg', fr: 'tôt' },
+        { id: 'd15-laat', nl: 'laat', fr: 'tard' },
+      ],
+      phrases: [
+        { id: 'd15-p1', nl: 'Hoe laat is het?', fr: 'Quelle heure est-il ?' },
+        { id: 'd15-p2', nl: 'Het is half acht.', fr: 'Il est 7 h 30.' },
+        { id: 'd15-p3', nl: 'Hoe laat begint het?', fr: 'À quelle heure ça commence ?' },
+        { id: 'd15-p4', nl: 'Ik ben er om kwart over zes.', fr: 'J’y suis à 18 h 15.' },
+        { id: 'd15-p5', nl: 'Sorry dat ik te laat ben.', fr: 'Désolé d’être en retard.' },
+        { id: 'd15-p6', nl: 'Op zondag zijn de winkels dicht.', fr: 'Le dimanche les magasins sont fermés.' },
+      ],
+      dialogue: {
+        title: 'Hoe laat spreken we af?',
+        context: 'Fixer une heure au téléphone. Attention aux demies.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Sanne', nl: 'Zullen we morgen afspreken?', fr: 'On se voit demain ?' },
+          { speaker: 'Uri', nl: 'Graag. Hoe laat?', fr: 'Volontiers. À quelle heure ?' },
+          { speaker: 'Sanne', nl: 'Half acht bij mij?', fr: '19 h 30 chez moi ?' },
+          { speaker: 'Uri', nl: 'Half acht, dus zeven uur dertig?', fr: '« Half acht », donc sept heures trente ?' },
+          { speaker: 'Sanne', nl: 'Precies. Half acht is halfweg naar acht.', fr: 'Exactement. « Half acht » c’est à mi-chemin vers huit.' },
+          { speaker: 'Uri', nl: 'Ah, nu snap ik het. Dat is verwarrend!', fr: 'Ah, maintenant je comprends. C’est déroutant !' },
+          { speaker: 'Sanne', nl: 'Iedereen maakt die fout in het begin.', fr: 'Tout le monde fait cette erreur au début.' },
+          { speaker: 'Uri', nl: 'Goed, tot morgen om half acht dan.', fr: 'Bien, à demain 19 h 30 alors.' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Dis qu’il est 8 h 30.', accept: ['Het is half negen'] },
+        { prompt: 'Demande à quelle heure ça commence.', accept: ['Hoe laat begint het?'] },
+        { prompt: 'Dis que tu arrives à 18 h 15.', accept: ['Ik ben er om kwart over zes', 'Ik kom om kwart over zes'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J16 */
+    {
+      id: 'd16',
+      day: 16,
+      week: 3,
+      title: 'Les transports',
+      goal: 'Prendre le train, le tram, le vélo. Comprendre les annonces de gare.',
+      grammar: [
+        {
+          title: 'met de / met het + moyen de transport',
+          body:
+            "On voyage **met** (avec) :\n*met de trein, met de bus, met de tram, met de fiets, met de auto, met de metro, met het vliegtuig*, mais **te voet** ou **lopend** pour à pied.\nDestination : **naar** (vers) — *Ik ga naar Utrecht.*\nRappel de l'ordre : **Temps – Manière – Lieu**.\n*Ik ga **morgen** (temps) **met de trein** (manière) **naar Rotterdam** (lieu).*\nC'est l'inverse du français : mémorise cet exemple comme un modèle.",
+          examples: [
+            { nl: 'Ik ga met de fiets naar het station.', fr: 'Je vais à la gare à vélo.' },
+            { nl: 'Morgen ga ik met de trein naar Den Haag.', fr: 'Demain je vais à La Haye en train.' },
+          ],
+        },
+        {
+          title: 'Le vocabulaire des annonces',
+          body:
+            "Ce que tu entendras au haut-parleur :\n- *De trein naar … vertrekt van **spoor** vijf.* — Le train pour… part de la **voie** 5.\n- *Deze trein heeft een **vertraging** van tien minuten.* — Ce train a un **retard** de dix minutes.\n- *De trein rijdt vandaag **niet**.* — Le train ne circule pas aujourd'hui.\n- *Let op, **uitstappen** aan de linkerkant.* — Attention, descente à gauche.\n- **overstappen** = changer de train. *In Utrecht moet u overstappen.*\nEt le geste indispensable : **in- en uitchecken** avec ta carte à chaque entrée et sortie.",
+          examples: [
+            { nl: 'Van welk spoor vertrekt de trein?', fr: 'De quelle voie part le train ?' },
+            { nl: 'Moet ik overstappen?', fr: 'Dois-je changer de train ?' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd16-trein', nl: 'trein', fr: 'train', article: 'de', hint: 'traïn' },
+        { id: 'd16-bus', nl: 'bus', fr: 'bus', article: 'de' },
+        { id: 'd16-tram', nl: 'tram', fr: 'tram', article: 'de' },
+        { id: 'd16-metro', nl: 'metro', fr: 'métro', article: 'de' },
+        { id: 'd16-fiets', nl: 'fiets', fr: 'vélo', article: 'de', plural: 'fietsen' },
+        { id: 'd16-auto', nl: 'auto', fr: 'voiture', article: 'de' },
+        { id: 'd16-station', nl: 'station', fr: 'gare', article: 'het' },
+        { id: 'd16-halte', nl: 'halte', fr: 'arrêt', article: 'de' },
+        { id: 'd16-spoor', nl: 'spoor', fr: 'voie / quai', article: 'het' },
+        { id: 'd16-kaartje', nl: 'kaartje', fr: 'billet', article: 'het' },
+        { id: 'd16-vertrekken', nl: 'vertrekken', fr: 'partir' },
+        { id: 'd16-aankomen', nl: 'aankomen', fr: 'arriver' },
+        { id: 'd16-overstappen', nl: 'overstappen', fr: 'changer (de train)' },
+        { id: 'd16-instappen', nl: 'instappen', fr: 'monter (à bord)' },
+        { id: 'd16-uitstappen', nl: 'uitstappen', fr: 'descendre' },
+        { id: 'd16-vertraging', nl: 'vertraging', fr: 'retard', article: 'de' },
+        { id: 'd16-retour', nl: 'retour', fr: 'aller-retour', article: 'het' },
+        { id: 'd16-enkelereis', nl: 'enkele reis', fr: 'aller simple', article: 'de' },
+        { id: 'd16-rijden', nl: 'rijden', fr: 'rouler / conduire' },
+        { id: 'd16-lopen2', nl: 'lopend', fr: 'à pied' },
+      ],
+      phrases: [
+        { id: 'd16-p1', nl: 'Van welk spoor vertrekt de trein naar Utrecht?', fr: 'De quelle voie part le train pour Utrecht ?' },
+        { id: 'd16-p2', nl: 'Moet ik overstappen?', fr: 'Dois-je changer de train ?' },
+        { id: 'd16-p3', nl: 'Hoe lang duurt de reis?', fr: 'Combien de temps dure le trajet ?' },
+        { id: 'd16-p4', nl: 'Stopt deze bus bij het station?', fr: 'Ce bus s’arrête-t-il à la gare ?' },
+        { id: 'd16-p5', nl: 'Er is een vertraging van tien minuten.', fr: 'Il y a dix minutes de retard.' },
+        { id: 'd16-p6', nl: 'Ik ga liever met de fiets.', fr: 'Je préfère y aller à vélo.' },
+      ],
+      dialogue: {
+        title: 'Aan het loket',
+        context: 'Au guichet de la gare, tu achètes un billet et tu vérifies ton itinéraire.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Uri', nl: 'Goedemiddag. Een enkele reis naar Groningen, graag.', fr: 'Bonjour. Un aller simple pour Groningue, s’il vous plaît.' },
+          { speaker: 'Loket', nl: 'Tweede klas? Dat is zesentwintig euro tien.', fr: 'Seconde classe ? Cela fait vingt-six euros dix.' },
+          { speaker: 'Uri', nl: 'Prima. Van welk spoor vertrekt hij?', fr: 'Parfait. De quelle voie part-il ?' },
+          { speaker: 'Loket', nl: 'Spoor elf, over twaalf minuten.', fr: 'Voie onze, dans douze minutes.' },
+          { speaker: 'Uri', nl: 'Moet ik overstappen?', fr: 'Dois-je changer ?' },
+          { speaker: 'Loket', nl: 'Ja, in Amersfoort. Daar heeft u vier minuten.', fr: 'Oui, à Amersfoort. Vous y avez quatre minutes.' },
+          { speaker: 'Uri', nl: 'Vier minuten is kort. Is er vertraging?', fr: 'Quatre minutes c’est court. Y a-t-il du retard ?' },
+          { speaker: 'Loket', nl: 'Op dit moment niet. Goede reis!', fr: 'Pour l’instant non. Bon voyage !' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Demande un aller-retour pour Rotterdam.', accept: ['Een retour naar Rotterdam, graag'] },
+        { prompt: 'Demande de quelle voie part le train.', accept: ['Van welk spoor vertrekt de trein?'] },
+        { prompt: 'Dis que demain tu vas à Utrecht en train.', accept: ['Morgen ga ik met de trein naar Utrecht'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J17 */
+    {
+      id: 'd17',
+      day: 17,
+      week: 3,
+      title: 'Demander son chemin',
+      goal: 'Poser la question, et surtout comprendre la réponse.',
+      grammar: [
+        {
+          title: 'Les prépositions de lieu',
+          body:
+            "**in** (dans), **op** (sur, et aussi « à » pour une place/un étage), **onder** (sous), **boven** (au-dessus), **naast** (à côté de), **tussen** (entre), **tegenover** (en face de), **achter** (derrière), **voor** (devant), **bij** (près de, chez), **langs** (le long de), **door** (à travers), **tot** (jusqu'à).\nRemarque : **op** s'emploie là où le français dit « à » — *op het station, op kantoor, op de markt, op straat*.",
+          examples: [
+            { nl: 'De apotheek is naast de supermarkt.', fr: 'La pharmacie est à côté du supermarché.' },
+            { nl: 'Het café is tegenover de kerk.', fr: 'Le bar est en face de l’église.' },
+          ],
+        },
+        {
+          title: 'Comprendre les indications',
+          body:
+            "Les mots à reconnaître **au vol** :\n- **rechtdoor** — tout droit (attention : *rechts* = à droite, *rechtdoor* = tout droit)\n- **links / rechts** — à gauche / à droite\n- **afslaan** — tourner. *Sla linksaf* — Tournez à gauche.\n- **de eerste straat rechts** — la première rue à droite\n- **bij het stoplicht** — au feu\n- **op de hoek** — au coin\n- **doorlopen tot** — continuer jusqu'à\nLa phrase de secours si tu perds le fil : **Kunt u het op de kaart aanwijzen?** — Pouvez-vous me le montrer sur la carte ?",
+          examples: [
+            { nl: 'Ga rechtdoor en sla dan linksaf.', fr: 'Allez tout droit puis tournez à gauche.' },
+            { nl: 'Het is op de hoek, naast de bakker.', fr: 'C’est au coin, à côté du boulanger.' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd17-links', nl: 'links', fr: 'à gauche' },
+        { id: 'd17-rechts', nl: 'rechts', fr: 'à droite' },
+        { id: 'd17-rechtdoor', nl: 'rechtdoor', fr: 'tout droit' },
+        { id: 'd17-afslaan', nl: 'afslaan', fr: 'tourner' },
+        { id: 'd17-straat', nl: 'straat', fr: 'rue', article: 'de' },
+        { id: 'd17-plein', nl: 'plein', fr: 'place', article: 'het' },
+        { id: 'd17-hoek', nl: 'hoek', fr: 'coin', article: 'de' },
+        { id: 'd17-brug', nl: 'brug', fr: 'pont', article: 'de', hint: 'brugh' },
+        { id: 'd17-gracht', nl: 'gracht', fr: 'canal (en ville)', article: 'de' },
+        { id: 'd17-kerk', nl: 'kerk', fr: 'église', article: 'de' },
+        { id: 'd17-apotheek', nl: 'apotheek', fr: 'pharmacie', article: 'de' },
+        { id: 'd17-ziekenhuis', nl: 'ziekenhuis', fr: 'hôpital', article: 'het' },
+        { id: 'd17-naast', nl: 'naast', fr: 'à côté de' },
+        { id: 'd17-tegenover', nl: 'tegenover', fr: 'en face de' },
+        { id: 'd17-tussen', nl: 'tussen', fr: 'entre' },
+        { id: 'd17-achter', nl: 'achter', fr: 'derrière' },
+        { id: 'd17-dichtbij', nl: 'dichtbij', fr: 'tout près' },
+        { id: 'd17-ver', nl: 'ver', fr: 'loin' },
+        { id: 'd17-verdwalen', nl: 'verdwalen', fr: 'se perdre' },
+      ],
+      phrases: [
+        { id: 'd17-p1', nl: 'Mag ik u iets vragen?', fr: 'Puis-je vous demander quelque chose ?' },
+        { id: 'd17-p2', nl: 'Weet u waar het station is?', fr: 'Savez-vous où est la gare ?' },
+        { id: 'd17-p3', nl: 'Is het ver hiervandaan?', fr: 'Est-ce loin d’ici ?' },
+        { id: 'd17-p4', nl: 'Ik ben verdwaald.', fr: 'Je suis perdu.' },
+        { id: 'd17-p5', nl: 'Kunt u het op de kaart aanwijzen?', fr: 'Pouvez-vous me le montrer sur la carte ?' },
+        { id: 'd17-p6', nl: 'Hoe lang lopen is het?', fr: 'C’est à combien de minutes à pied ?' },
+      ],
+      dialogue: {
+        title: 'De weg vragen',
+        context: 'Tu cherches la bibliothèque. Un passant t’explique — vite.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Uri', nl: 'Pardon, mag ik u iets vragen?', fr: 'Pardon, puis-je vous demander quelque chose ?' },
+          { speaker: 'Voorbijganger', nl: 'Ja hoor, zegt u het maar.', fr: 'Oui bien sûr, allez-y.' },
+          { speaker: 'Uri', nl: 'Weet u waar de bibliotheek is?', fr: 'Savez-vous où est la bibliothèque ?' },
+          { speaker: 'Voorbijganger', nl: 'Ga hier rechtdoor tot de brug, dan rechtsaf.', fr: 'Allez tout droit jusqu’au pont, puis à droite.' },
+          { speaker: 'Uri', nl: 'Tot de brug en dan rechts. En dan?', fr: 'Jusqu’au pont et puis à droite. Et ensuite ?' },
+          { speaker: 'Voorbijganger', nl: 'De tweede straat links. Het is naast de kerk.', fr: 'La deuxième rue à gauche. C’est à côté de l’église.' },
+          { speaker: 'Uri', nl: 'Is het ver? Ik ben te voet.', fr: 'C’est loin ? Je suis à pied.' },
+          { speaker: 'Voorbijganger', nl: 'Nee, vijf minuten lopen. U kunt het niet missen.', fr: 'Non, cinq minutes à pied. Vous ne pouvez pas le rater.' },
+          { speaker: 'Uri', nl: 'Heel erg bedankt!', fr: 'Merci beaucoup !' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Demande poliment où se trouve la gare.', accept: ['Weet u waar het station is?'] },
+        { prompt: 'Dis que tu es perdu.', accept: ['Ik ben verdwaald'] },
+        { prompt: 'Demande si c’est loin d’ici.', accept: ['Is het ver hiervandaan?'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J18 */
+    {
+      id: 'd18',
+      day: 18,
+      week: 3,
+      title: 'Les verbes modaux — kunnen, moeten, willen, mogen',
+      goal: 'Multiplier par dix ce que tu peux exprimer avec les verbes que tu connais déjà.',
+      grammar: [
+        {
+          title: 'Le modal se conjugue, l’autre verbe part à la fin',
+          body:
+            "C'est **la** structure qui change tout : le modal occupe la place 2, et l'infinitif se retrouve **en dernier**.\n*Ik **kan** morgen niet **komen**.* — Je ne peux pas venir demain.\n*Ik **moet** vanavond boodschappen **doen**.* — Je dois faire les courses ce soir.\nEntraîne-toi à garder l'infinitif « en réserve » jusqu'au bout de la phrase : c'est le réflexe le plus difficile pour un francophone.",
+          examples: [
+            { nl: 'Ik wil graag Nederlands leren.', fr: 'Je veux apprendre le néerlandais.' },
+            { nl: 'Mag ik hier parkeren?', fr: 'Puis-je me garer ici ?' },
+            { nl: 'We moeten om acht uur vertrekken.', fr: 'Nous devons partir à huit heures.' },
+          ],
+        },
+        {
+          title: 'Les quatre modaux, conjugués',
+          body:
+            "- **kunnen** (pouvoir, savoir faire) : ik **kan**, jij **kunt/kan**, hij **kan**, wij **kunnen**\n- **moeten** (devoir) : ik **moet**, jij **moet**, hij **moet**, wij **moeten**\n- **willen** (vouloir) : ik **wil**, jij **wilt/wil**, hij **wil**, wij **willen**\n- **mogen** (avoir le droit) : ik **mag**, jij **mag**, hij **mag**, wij **mogen**\nNuance à retenir : **kunnen** = être capable ; **mogen** = être autorisé. *Ik kan zwemmen* (je sais nager) ≠ *Ik mag zwemmen* (j'ai le droit de nager).\nEt **zullen** pour proposer : *Zullen we…?* — « Si on… ? ». La formule d'invitation par excellence.",
+          examples: [
+            { nl: 'Zullen we koffie drinken?', fr: 'Si on prenait un café ?' },
+            { nl: 'Kun je me helpen?', fr: 'Peux-tu m’aider ?' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd18-kunnen', nl: 'kunnen', fr: 'pouvoir / savoir' },
+        { id: 'd18-moeten', nl: 'moeten', fr: 'devoir' },
+        { id: 'd18-willen', nl: 'willen', fr: 'vouloir' },
+        { id: 'd18-mogen', nl: 'mogen', fr: 'avoir le droit de' },
+        { id: 'd18-zullen', nl: 'zullen', fr: 'aller (futur) / si on…' },
+        { id: 'd18-helpen', nl: 'helpen', fr: 'aider' },
+        { id: 'd18-proberen', nl: 'proberen', fr: 'essayer' },
+        { id: 'd18-blijven', nl: 'blijven', fr: 'rester' },
+        { id: 'd18-wachten', nl: 'wachten', fr: 'attendre' },
+        { id: 'd18-beginnen', nl: 'beginnen', fr: 'commencer' },
+        { id: 'd18-stoppen', nl: 'stoppen', fr: 'arrêter' },
+        { id: 'd18-parkeren', nl: 'parkeren', fr: 'se garer' },
+        { id: 'd18-roken', nl: 'roken', fr: 'fumer' },
+        { id: 'd18-zwemmen', nl: 'zwemmen', fr: 'nager' },
+        { id: 'd18-rijbewijs', nl: 'rijbewijs', fr: 'permis de conduire', article: 'het' },
+        { id: 'd18-verboden', nl: 'verboden', fr: 'interdit' },
+      ],
+      phrases: [
+        { id: 'd18-p1', nl: 'Kun je me helpen?', fr: 'Peux-tu m’aider ?' },
+        { id: 'd18-p2', nl: 'Ik moet nog boodschappen doen.', fr: 'Je dois encore faire les courses.' },
+        { id: 'd18-p3', nl: 'Mag ik hier parkeren?', fr: 'Puis-je me garer ici ?' },
+        { id: 'd18-p4', nl: 'Zullen we samen koffie drinken?', fr: 'Si on prenait un café ensemble ?' },
+        { id: 'd18-p5', nl: 'Ik wil graag beter Nederlands leren.', fr: 'Je veux apprendre le néerlandais mieux.' },
+        { id: 'd18-p6', nl: 'Kunt u dat nog een keer zeggen?', fr: 'Pouvez-vous le redire une fois ?' },
+      ],
+      dialogue: {
+        title: 'Een handje helpen',
+        context: 'Ton voisin déménage un meuble. Tout le dialogue tourne autour des modaux.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Joost', nl: 'Uri! Kun je me even helpen?', fr: 'Uri ! Tu peux m’aider un instant ?' },
+          { speaker: 'Uri', nl: 'Natuurlijk. Wat moet er gebeuren?', fr: 'Bien sûr. Qu’est-ce qu’il faut faire ?' },
+          { speaker: 'Joost', nl: 'Deze kast moet naar boven. Alleen kan ik het niet.', fr: 'Cette armoire doit monter. Seul je n’y arrive pas.' },
+          { speaker: 'Uri', nl: 'Mag ik hem hier vastpakken?', fr: 'Je peux l’attraper ici ?' },
+          { speaker: 'Joost', nl: 'Ja, prima. We moeten voorzichtig zijn bij de trap.', fr: 'Oui, parfait. Il faut faire attention dans l’escalier.' },
+          { speaker: 'Uri', nl: 'Zullen we even pauze nemen? Hij is zwaar.', fr: 'On fait une pause ? Elle est lourde.' },
+          { speaker: 'Joost', nl: 'Goed idee. Wil je een biertje?', fr: 'Bonne idée. Tu veux une bière ?' },
+          { speaker: 'Uri', nl: 'Graag, maar eerst moeten we dit afmaken!', fr: 'Volontiers, mais d’abord on doit finir ça !' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Demande à quelqu’un s’il peut t’aider.', accept: ['Kun je me helpen?', 'Kunt u me helpen?'] },
+        { prompt: 'Dis que tu dois encore faire les courses ce soir.', accept: ['Ik moet vanavond nog boodschappen doen'] },
+        { prompt: 'Propose de prendre un café ensemble.', accept: ['Zullen we samen koffie drinken?'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J19 */
+    {
+      id: 'd19',
+      day: 19,
+      week: 3,
+      title: 'Les verbes à particule séparable',
+      goal: 'Comprendre pourquoi la fin des phrases néerlandaises est si étrange.',
+      grammar: [
+        {
+          title: 'La particule se détache et file à la fin',
+          body:
+            "**opstaan** (se lever) = *op* + *staan*. Dans une phrase simple, la particule **se détache** et va tout au bout :\n*Ik **sta** elke dag om zeven uur **op**.*\nAutres exemples :\n- *meegaan* → *Ga je **mee**?* — Tu viens (avec) ?\n- *afspreken* → *We **spreken** morgen **af**.* — On se donne rendez-vous demain.\n- *opbellen* → *Ik **bel** je vanavond **op**.* — Je t'appelle ce soir.\n**Sauf** : avec un modal, le verbe reste entier à la fin. *Ik moet vroeg **opstaan**.*\nComment les reconnaître ? L'accent tonique tombe sur la **particule** : *ÓP-staan*, *MÉE-gaan*.",
+          examples: [
+            { nl: 'Ik sta om zeven uur op.', fr: 'Je me lève à sept heures.' },
+            { nl: 'Ga je mee naar de markt?', fr: 'Tu viens au marché ?' },
+            { nl: 'Ik moet morgen vroeg opstaan.', fr: 'Je dois me lever tôt demain.' },
+          ],
+        },
+        {
+          title: 'Les plus utiles au quotidien',
+          body:
+            "- **opstaan** se lever · **aankleden** s'habiller · **uitgaan** sortir (le soir)\n- **meegaan** venir avec · **meenemen** emporter · **ophalen** aller chercher\n- **afspreken** convenir d'un rendez-vous · **opbellen** téléphoner · **terugbellen** rappeler\n- **opruimen** ranger · **schoonmaken** nettoyer · **afwassen** faire la vaisselle\n- **aankomen** arriver · **weggaan** partir · **binnenkomen** entrer\n- **uitleggen** expliquer · **opschrijven** noter · **doorgaan** continuer",
+          examples: [
+            { nl: 'Ik haal je om acht uur op.', fr: 'Je viens te chercher à huit heures.' },
+            { nl: 'Kun je dat even uitleggen?', fr: 'Tu peux expliquer ça un instant ?' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd19-opstaan', nl: 'opstaan', fr: 'se lever' },
+        { id: 'd19-meegaan', nl: 'meegaan', fr: 'venir avec' },
+        { id: 'd19-meenemen', nl: 'meenemen', fr: 'emporter' },
+        { id: 'd19-ophalen', nl: 'ophalen', fr: 'aller chercher (qqn)' },
+        { id: 'd19-afspreken', nl: 'afspreken', fr: 'convenir d’un rendez-vous' },
+        { id: 'd19-opbellen', nl: 'opbellen', fr: 'appeler (téléphone)' },
+        { id: 'd19-terugbellen', nl: 'terugbellen', fr: 'rappeler' },
+        { id: 'd19-opruimen', nl: 'opruimen', fr: 'ranger' },
+        { id: 'd19-schoonmaken', nl: 'schoonmaken', fr: 'nettoyer' },
+        { id: 'd19-afwassen', nl: 'afwassen', fr: 'faire la vaisselle' },
+        { id: 'd19-uitgaan', nl: 'uitgaan', fr: 'sortir (le soir)' },
+        { id: 'd19-weggaan', nl: 'weggaan', fr: 'partir / s’en aller' },
+        { id: 'd19-uitleggen', nl: 'uitleggen', fr: 'expliquer' },
+        { id: 'd19-opschrijven', nl: 'opschrijven', fr: 'noter' },
+        { id: 'd19-aankleden', nl: 'aankleden', fr: 's’habiller' },
+        { id: 'd19-doorgaan', nl: 'doorgaan', fr: 'continuer' },
+        { id: 'd19-afspraak', nl: 'afspraak', fr: 'rendez-vous', article: 'de' },
+      ],
+      phrases: [
+        { id: 'd19-p1', nl: 'Ik sta elke dag om zeven uur op.', fr: 'Je me lève tous les jours à sept heures.' },
+        { id: 'd19-p2', nl: 'Ga je mee naar de markt?', fr: 'Tu viens au marché ?' },
+        { id: 'd19-p3', nl: 'Ik bel je vanavond op.', fr: 'Je t’appelle ce soir.' },
+        { id: 'd19-p4', nl: 'Kun je dat even uitleggen?', fr: 'Tu peux expliquer ça ?' },
+        { id: 'd19-p5', nl: 'Ik haal je om acht uur op.', fr: 'Je viens te chercher à huit heures.' },
+        { id: 'd19-p6', nl: 'Ik moet morgen vroeg opstaan.', fr: 'Je dois me lever tôt demain.' },
+      ],
+      dialogue: {
+        title: 'Plannen voor zaterdag',
+        context: 'Organiser une sortie. Chaque phrase contient une particule séparable.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Sanne', nl: 'Zullen we zaterdag afspreken?', fr: 'On se voit samedi ?' },
+          { speaker: 'Uri', nl: 'Ja! Waar spreken we af?', fr: 'Oui ! On se donne rendez-vous où ?' },
+          { speaker: 'Sanne', nl: 'Ik haal je op met de auto, om elf uur.', fr: 'Je viens te chercher en voiture, à onze heures.' },
+          { speaker: 'Uri', nl: 'Perfect. Moet ik iets meenemen?', fr: 'Parfait. Je dois apporter quelque chose ?' },
+          { speaker: 'Sanne', nl: 'Neem een jas mee, het gaat regenen.', fr: 'Prends un manteau, il va pleuvoir.' },
+          { speaker: 'Uri', nl: 'Goed. Dan sta ik vroeg op.', fr: 'Bien. Alors je me lève tôt.' },
+          { speaker: 'Sanne', nl: 'Als er iets is, bel me even op.', fr: 'S’il y a quelque chose, appelle-moi.' },
+          { speaker: 'Uri', nl: 'Doe ik. Ik schrijf het meteen op.', fr: 'Je le ferai. Je le note tout de suite.' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Dis à quelle heure tu te lèves.', accept: ['Ik sta om zeven uur op'] },
+        { prompt: 'Demande à quelqu’un s’il vient avec toi.', accept: ['Ga je mee?'] },
+        { prompt: 'Dis que tu appelleras ce soir.', accept: ['Ik bel je vanavond op'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J20 */
+    {
+      id: 'd20',
+      day: 20,
+      week: 3,
+      title: 'Inviter, proposer, accepter, refuser',
+      goal: 'Transformer une rencontre en rendez-vous — le vrai test social.',
+      grammar: [
+        {
+          title: 'Proposer sans forcer',
+          body:
+            "Les Néerlandais planifient. Une invitation vague (« on se voit un de ces jours ») ne mène nulle part : propose une **date**.\n- **Zullen we…?** — Si on… ? *Zullen we zondag wandelen?*\n- **Heb je zin om…te…?** — As-tu envie de… ? *Heb je zin om te eten?*\n- **Wat vind je van…?** — Que dirais-tu de… ?\n- **Kom je een keer langs?** — Tu passes une fois ?\n- **Zin in koffie?** — Envie d'un café ? (version courte, très naturelle)\nAccepter : *Ja, leuk! / Graag! / Goed idee! / Dat lijkt me leuk.*\nRefuser sans vexer : *Dat komt me nu even niet uit.* / *Ik kan helaas niet, maar een andere keer graag.*",
+          examples: [
+            { nl: 'Heb je zin om zaterdag te wandelen?', fr: 'Tu as envie de te promener samedi ?' },
+            { nl: 'Dat lijkt me leuk!', fr: 'Ça me semble sympa !' },
+          ],
+        },
+        {
+          title: 'La structure om … te + infinitif',
+          body:
+            "Pour dire « pour faire » ou « de faire », le néerlandais encadre : **om** … **te** + infinitif, avec l'infinitif **à la fin**.\n- *Ik heb geen tijd **om** vanavond **te komen**.* — Je n'ai pas le temps de venir ce soir.\n- *Ik leer Nederlands **om** met mijn buren **te praten**.* — J'apprends le néerlandais pour parler avec mes voisins.\nAvec un verbe à particule, le **te** se glisse **au milieu** : *op **te** staan*, *mee **te** gaan*.",
+          examples: [
+            { nl: 'Ik heb zin om uit te gaan.', fr: 'J’ai envie de sortir.' },
+            { nl: 'Het is tijd om te vertrekken.', fr: 'Il est temps de partir.' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd20-uitnodigen', nl: 'uitnodigen', fr: 'inviter' },
+        { id: 'd20-langskomen', nl: 'langskomen', fr: 'passer (chez qqn)' },
+        { id: 'd20-wandelen', nl: 'wandelen', fr: 'se promener' },
+        { id: 'd20-borrel', nl: 'borrel', fr: 'apéro', article: 'de' },
+        { id: 'd20-feestje', nl: 'feestje', fr: 'petite fête', article: 'het' },
+        { id: 'd20-verjaardag', nl: 'verjaardag', fr: 'anniversaire', article: 'de' },
+        { id: 'd20-etentje', nl: 'etentje', fr: 'dîner (entre amis)', article: 'het' },
+        { id: 'd20-bioscoop', nl: 'bioscoop', fr: 'cinéma', article: 'de' },
+        { id: 'd20-vrij', nl: 'vrij', fr: 'libre' },
+        { id: 'd20-bezet', nl: 'bezet', fr: 'occupé / pris' },
+        { id: 'd20-helaas', nl: 'helaas', fr: 'malheureusement' },
+        { id: 'd20-graag2', nl: 'graag', fr: 'volontiers' },
+        { id: 'd20-leuk', nl: 'leuk', fr: 'sympa / chouette' },
+        { id: 'd20-lijken', nl: 'lijken', fr: 'sembler' },
+        { id: 'd20-passen', nl: 'uitkomen', fr: 'convenir / arranger' },
+        { id: 'd20-keer', nl: 'keer', fr: 'fois', article: 'de' },
+      ],
+      phrases: [
+        { id: 'd20-p1', nl: 'Heb je zin om koffie te drinken?', fr: 'Tu as envie de prendre un café ?' },
+        { id: 'd20-p2', nl: 'Zullen we zondag gaan wandelen?', fr: 'On va se promener dimanche ?' },
+        { id: 'd20-p3', nl: 'Dat lijkt me leuk!', fr: 'Ça me semble sympa !' },
+        { id: 'd20-p4', nl: 'Helaas kan ik niet, maar een andere keer graag.', fr: 'Malheureusement je ne peux pas, mais une autre fois volontiers.' },
+        { id: 'd20-p5', nl: 'Kom je een keer langs?', fr: 'Tu passes une fois ?' },
+        { id: 'd20-p6', nl: 'Dat komt me nu even niet uit.', fr: 'Ça ne m’arrange pas là tout de suite.' },
+      ],
+      dialogue: {
+        title: 'Een uitnodiging',
+        context: 'Ta collègue t’invite à un apéro. Tu acceptes, tu poses les bonnes questions.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Fleur', nl: 'Uri, we hebben vrijdag een borrel. Kom je ook?', fr: 'Uri, on a un apéro vendredi. Tu viens aussi ?' },
+          { speaker: 'Uri', nl: 'Leuk! Hoe laat begint het?', fr: 'Super ! À quelle heure ça commence ?' },
+          { speaker: 'Fleur', nl: 'Vanaf vijf uur, bij mij thuis.', fr: 'À partir de cinq heures, chez moi.' },
+          { speaker: 'Uri', nl: 'En moet ik iets meenemen?', fr: 'Et je dois apporter quelque chose ?' },
+          { speaker: 'Fleur', nl: 'Nee hoor. Of wat te drinken, als je wilt.', fr: 'Non non. Ou de quoi boire, si tu veux.' },
+          { speaker: 'Uri', nl: 'Ik neem wijn mee. Wie komen er nog meer?', fr: 'J’apporte du vin. Qui vient d’autre ?' },
+          { speaker: 'Fleur', nl: 'Een stuk of acht mensen van kantoor.', fr: 'Environ huit personnes du bureau.' },
+          { speaker: 'Uri', nl: 'Dan ga ik zeker mee. Bedankt voor de uitnodiging!', fr: 'Alors je viens sûrement. Merci pour l’invitation !' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Invite quelqu’un à prendre un café.', accept: ['Heb je zin om koffie te drinken?', 'Zullen we koffie drinken?'] },
+        { prompt: 'Accepte chaleureusement une invitation.', accept: ['Dat lijkt me leuk!', 'Ja, graag!'] },
+        { prompt: 'Refuse poliment et propose une autre fois.', accept: ['Helaas kan ik niet, maar een andere keer graag'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J21 */
+    {
+      id: 'd21',
+      day: 21,
+      week: 3,
+      title: 'Révision semaine 3 — organiser un week-end',
+      goal: 'Mi-parcours : tenir une conversation de planification de bout en bout.',
+      grammar: [
+        {
+          title: 'Le point à mi-parcours',
+          body:
+            "Trois semaines. Tu devrais maintenant pouvoir :\n- dire l'heure, y compris les *half*\n- prendre un train et comprendre le quai et le retard\n- demander et suivre un itinéraire\n- utiliser les quatre modaux avec l'infinitif rejeté à la fin\n- séparer les particules verbales\n- inviter, accepter, refuser\nCe qui va changer en semaine 4 : tu vas parler du **passé**. C'est ce qui manque pour raconter, et raconter c'est ce qui rend une conversation intéressante.\n**Conseil de mi-parcours** : à partir d'aujourd'hui, parle néerlandais dans une situation réelle par jour, même dix secondes. La boulangerie compte.",
+          examples: [
+            { nl: 'Zullen we zaterdag om half elf afspreken?', fr: 'On se voit samedi à 10 h 30 ?' },
+            { nl: 'Ik moet eerst boodschappen doen, dan kan ik komen.', fr: 'Je dois d’abord faire les courses, ensuite je peux venir.' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd21-weekend', nl: 'weekend', fr: 'week-end', article: 'het' },
+        { id: 'd21-plan', nl: 'plan', fr: 'projet / plan', article: 'het' },
+        { id: 'd21-uitje', nl: 'uitje', fr: 'sortie', article: 'het' },
+        { id: 'd21-strand', nl: 'strand', fr: 'plage', article: 'het' },
+        { id: 'd21-park', nl: 'park', fr: 'parc', article: 'het' },
+        { id: 'd21-museum', nl: 'museum', fr: 'musée', article: 'het' },
+        { id: 'd21-weer', nl: 'weer', fr: 'temps (météo)', article: 'het' },
+        { id: 'd21-regen', nl: 'regen', fr: 'pluie', article: 'de' },
+        { id: 'd21-zon', nl: 'zon', fr: 'soleil', article: 'de' },
+        { id: 'd21-wind', nl: 'wind', fr: 'vent', article: 'de' },
+        { id: 'd21-regenen', nl: 'regenen', fr: 'pleuvoir' },
+        { id: 'd21-schijnen', nl: 'schijnen', fr: 'briller' },
+        { id: 'd21-jas', nl: 'jas', fr: 'manteau', article: 'de' },
+        { id: 'd21-paraplu', nl: 'paraplu', fr: 'parapluie', article: 'de' },
+        { id: 'd21-samenkomen', nl: 'samen', fr: 'ensemble' },
+      ],
+      phrases: [
+        { id: 'd21-p1', nl: 'Wat zijn je plannen voor het weekend?', fr: 'Quels sont tes projets pour le week-end ?' },
+        { id: 'd21-p2', nl: 'Als het mooi weer is, gaan we naar het strand.', fr: 'S’il fait beau, on va à la plage.' },
+        { id: 'd21-p3', nl: 'Het gaat waarschijnlijk regenen.', fr: 'Il va probablement pleuvoir.' },
+        { id: 'd21-p4', nl: 'Vergeet je paraplu niet!', fr: 'N’oublie pas ton parapluie !' },
+        { id: 'd21-p5', nl: 'Ik pik je om tien uur op.', fr: 'Je passe te prendre à dix heures.' },
+      ],
+      dialogue: {
+        title: 'Het weekend plannen',
+        context: 'Conversation complète de planification : heure, transport, météo, lieu.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Sanne', nl: 'Wat zijn je plannen voor het weekend?', fr: 'Quels sont tes projets pour le week-end ?' },
+          { speaker: 'Uri', nl: 'Nog niets. Heb jij een idee?', fr: 'Rien encore. Tu as une idée ?' },
+          { speaker: 'Sanne', nl: 'Zullen we naar het strand gaan? In Zandvoort.', fr: 'On va à la plage ? À Zandvoort.' },
+          { speaker: 'Uri', nl: 'Goed idee. Maar gaat het niet regenen?', fr: 'Bonne idée. Mais il ne va pas pleuvoir ?' },
+          { speaker: 'Sanne', nl: 'Zaterdag schijnt de zon, zeggen ze.', fr: 'Samedi il y aura du soleil, à ce qu’ils disent.' },
+          { speaker: 'Uri', nl: 'Perfect. Gaan we met de trein of met de auto?', fr: 'Parfait. On y va en train ou en voiture ?' },
+          { speaker: 'Sanne', nl: 'Met de trein is makkelijker. Half tien op het station?', fr: 'Le train est plus simple. 9 h 30 à la gare ?' },
+          { speaker: 'Uri', nl: 'Half tien, dus negen uur dertig. Afgesproken.', fr: '« Half tien », donc neuf heures trente. Marché conclu.' },
+          { speaker: 'Sanne', nl: 'Neem een jas mee, aan zee waait het altijd.', fr: 'Prends un manteau, au bord de la mer il y a toujours du vent.' },
+          { speaker: 'Uri', nl: 'Doe ik. Ik verheug me erop!', fr: 'Je le ferai. Je m’en réjouis !' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Demande à quelqu’un ses projets pour le week-end.', accept: ['Wat zijn je plannen voor het weekend?'] },
+        { prompt: 'Propose d’aller à la plage samedi en train.', accept: ['Zullen we zaterdag met de trein naar het strand gaan?'] },
+        { prompt: 'Dis qu’il va probablement pleuvoir et qu’il faut prendre un manteau.', accept: ['Het gaat waarschijnlijk regenen, neem een jas mee'] },
+      ],
+    },
+  ],
+}

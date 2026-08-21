@@ -1,0 +1,543 @@
+import type { Week } from '../types'
+
+export const week5: Week = {
+  week: 5,
+  title: 'Les situations qui font peur : santé, administration, logement, téléphone',
+  focus:
+    "Les moments où l'on n'a pas le droit de se rabattre sur l'anglais — ou pas envie. Le vocabulaire précis et les formules toutes faites qui te sauvent.",
+  lessons: [
+    /* ------------------------------------------------------------ J29 */
+    {
+      id: 'd29',
+      day: 29,
+      week: 5,
+      title: 'Chez le médecin : le corps et les symptômes',
+      goal: 'Décrire une douleur avec précision, comprendre les questions du médecin.',
+      grammar: [
+        {
+          title: 'Dire qu’on a mal',
+          body:
+            "Trois constructions, de la plus simple à la plus naturelle :\n1. **Ik heb pijn in mijn …** — J'ai mal à… *Ik heb pijn in mijn rug.*\n2. **Mijn … doet pijn.** — Mon … fait mal. *Mijn keel doet pijn.*\n3. Les composés en **-pijn** : **hoofdpijn** (mal de tête), **buikpijn** (ventre), **keelpijn** (gorge), **rugpijn** (dos), **kiespijn** (dent). *Ik heb hoofdpijn.*\nAutres :\n- **Ik voel me niet lekker.** — Je ne me sens pas bien. (la phrase passe-partout)\n- **Ik ben verkouden.** — J'ai un rhume.\n- **Ik heb koorts.** — J'ai de la fièvre.\n- **Het doet zeer als ik …** — Ça fait mal quand je…",
+          examples: [
+            { nl: 'Ik voel me niet lekker.', fr: 'Je ne me sens pas bien.' },
+            { nl: 'Ik heb al drie dagen hoofdpijn.', fr: 'J’ai mal à la tête depuis trois jours.' },
+          ],
+        },
+        {
+          title: 'Ce que le médecin va demander',
+          body:
+            "- *Wat zijn uw klachten?* — Quels sont vos symptômes ?\n- *Sinds wanneer heeft u dat?* — Depuis quand avez-vous ça ?\n- *Heeft u koorts gemeten?* — Avez-vous pris votre température ?\n- *Gebruikt u medicijnen?* — Prenez-vous des médicaments ?\n- *Bent u ergens allergisch voor?* — Êtes-vous allergique à quelque chose ?\n- *Kunt u even gaan liggen?* — Pouvez-vous vous allonger ?\nEt la réponse la plus fréquente du **huisarts** néerlandais : *Neem paracetamol en kom terug als het over een week niet beter is.* Il faut le savoir.",
+          examples: [
+            { nl: 'Sinds wanneer heeft u dat?', fr: 'Depuis quand avez-vous ça ?' },
+            { nl: 'Ik ben allergisch voor penicilline.', fr: 'Je suis allergique à la pénicilline.' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd29-hoofd', nl: 'hoofd', fr: 'tête', article: 'het' },
+        { id: 'd29-keel', nl: 'keel', fr: 'gorge', article: 'de' },
+        { id: 'd29-buik', nl: 'buik', fr: 'ventre', article: 'de', hint: 'beuïk' },
+        { id: 'd29-rug', nl: 'rug', fr: 'dos', article: 'de' },
+        { id: 'd29-been', nl: 'been', fr: 'jambe', article: 'het', plural: 'benen' },
+        { id: 'd29-arm', nl: 'arm', fr: 'bras', article: 'de' },
+        { id: 'd29-hand', nl: 'hand', fr: 'main', article: 'de', plural: 'handen' },
+        { id: 'd29-voet', nl: 'voet', fr: 'pied', article: 'de' },
+        { id: 'd29-oor', nl: 'oor', fr: 'oreille', article: 'het', plural: 'oren' },
+        { id: 'd29-tand', nl: 'tand', fr: 'dent', article: 'de' },
+        { id: 'd29-pijn', nl: 'pijn', fr: 'douleur', article: 'de', hint: 'païn' },
+        { id: 'd29-koorts', nl: 'koorts', fr: 'fièvre', article: 'de' },
+        { id: 'd29-verkouden', nl: 'verkouden', fr: 'enrhumé' },
+        { id: 'd29-griep', nl: 'griep', fr: 'grippe', article: 'de' },
+        { id: 'd29-hoesten', nl: 'hoesten', fr: 'tousser' },
+        { id: 'd29-ziek', nl: 'ziek', fr: 'malade' },
+        { id: 'd29-beter', nl: 'beter', fr: 'mieux' },
+        { id: 'd29-huisarts', nl: 'huisarts', fr: 'médecin généraliste', article: 'de' },
+        { id: 'd29-klacht', nl: 'klacht', fr: 'symptôme / plainte', article: 'de' },
+        { id: 'd29-allergisch', nl: 'allergisch', fr: 'allergique' },
+      ],
+      phrases: [
+        { id: 'd29-p1', nl: 'Ik voel me niet lekker.', fr: 'Je ne me sens pas bien.' },
+        { id: 'd29-p2', nl: 'Ik heb al drie dagen keelpijn.', fr: 'J’ai mal à la gorge depuis trois jours.' },
+        { id: 'd29-p3', nl: 'Ik ben allergisch voor penicilline.', fr: 'Je suis allergique à la pénicilline.' },
+        { id: 'd29-p4', nl: 'Ik denk dat ik griep heb.', fr: 'Je pense que j’ai la grippe.' },
+        { id: 'd29-p5', nl: 'Het doet zeer als ik slik.', fr: 'Ça fait mal quand j’avale.' },
+        { id: 'd29-p6', nl: 'Moet ik terugkomen?', fr: 'Dois-je revenir ?' },
+      ],
+      dialogue: {
+        title: 'Bij de huisarts',
+        context: 'Consultation chez le médecin généraliste. Dix minutes chrono, comme toujours.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Huisarts', nl: 'Goedemiddag. Vertelt u het maar, wat zijn uw klachten?', fr: 'Bonjour. Dites-moi, quels sont vos symptômes ?' },
+          { speaker: 'Uri', nl: 'Ik voel me niet lekker. Ik heb keelpijn en koorts.', fr: 'Je ne me sens pas bien. J’ai mal à la gorge et de la fièvre.' },
+          { speaker: 'Huisarts', nl: 'Sinds wanneer?', fr: 'Depuis quand ?' },
+          { speaker: 'Uri', nl: 'Sinds drie dagen. En ik hoest ’s nachts.', fr: 'Depuis trois jours. Et je tousse la nuit.' },
+          { speaker: 'Huisarts', nl: 'Heeft u koorts gemeten?', fr: 'Avez-vous pris votre température ?' },
+          { speaker: 'Uri', nl: 'Ja, achtendertig vijf gisteravond.', fr: 'Oui, 38,5 hier soir.' },
+          { speaker: 'Huisarts', nl: 'Gebruikt u medicijnen? Bent u ergens allergisch voor?', fr: 'Prenez-vous des médicaments ? Êtes-vous allergique à quelque chose ?' },
+          { speaker: 'Uri', nl: 'Geen medicijnen. Ik ben allergisch voor penicilline.', fr: 'Pas de médicaments. Je suis allergique à la pénicilline.' },
+          { speaker: 'Huisarts', nl: 'Goed. Het lijkt een virus. Rust, water, paracetamol.', fr: 'Bien. Cela ressemble à un virus. Repos, eau, paracétamol.' },
+          { speaker: 'Uri', nl: 'En als het niet beter wordt, moet ik dan terugkomen?', fr: 'Et si ça ne s’améliore pas, dois-je revenir ?' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Dis que tu ne te sens pas bien et que tu as mal à la gorge.', accept: ['Ik voel me niet lekker en ik heb keelpijn'] },
+        { prompt: 'Dis depuis combien de temps tu as ces symptômes.', accept: ['Sinds drie dagen', 'Ik heb dat sinds drie dagen'] },
+        { prompt: 'Signale une allergie à la pénicilline.', accept: ['Ik ben allergisch voor penicilline'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J30 */
+    {
+      id: 'd30',
+      day: 30,
+      week: 5,
+      title: 'La pharmacie et prendre rendez-vous',
+      goal: 'Obtenir un rendez-vous par téléphone et acheter ce qu’il faut.',
+      grammar: [
+        {
+          title: 'Prendre rendez-vous : les formules exactes',
+          body:
+            "L'assistante médicale (*de assistente*) filtre tous les appels. Voici l'échange type, à connaître par cœur :\n- *Huisartsenpraktijk, met Marijke.* — Cabinet médical, Marijke à l'appareil.\n- **Goedemorgen, u spreekt met Uri Mallant. Ik wil graag een afspraak maken.**\n- *Waar gaat het over?* — De quoi s'agit-il ? (elle a le droit de demander)\n- **Ik heb al een week keelpijn en koorts.**\n- *Kunt u vanmiddag om kwart over drie?* — Pouvez-vous cet après-midi à 15 h 15 ?\n- **Ja, dat kan.** / **Nee, dan werk ik. Heeft u iets later?**\n- *Dan zet ik u erin. Tot straks.*\nLa formule d'ouverture au téléphone est **u spreekt met…** ou **met Uri**, jamais « ik ben ».",
+          examples: [
+            { nl: 'Ik wil graag een afspraak maken.', fr: 'Je voudrais prendre rendez-vous.' },
+            { nl: 'Heeft u iets later op de dag?', fr: 'Avez-vous quelque chose plus tard dans la journée ?' },
+          ],
+        },
+        {
+          title: 'À la pharmacie',
+          body:
+            "**de apotheek** délivre les ordonnances ; **de drogist** vend le paracétamol et le reste sans ordonnance.\n- *Ik kom een recept ophalen.* — Je viens chercher une ordonnance.\n- *Heeft u iets tegen hoofdpijn?* — Avez-vous quelque chose contre le mal de tête ?\n- *Hoe vaak moet ik dit innemen?* — Combien de fois dois-je le prendre ?\n- *Twee keer per dag, na het eten.* — Deux fois par jour, après le repas.\n- *Is dit met of zonder recept?* — Est-ce avec ou sans ordonnance ?",
+          examples: [
+            { nl: 'Heeft u iets tegen hoofdpijn?', fr: 'Avez-vous quelque chose contre le mal de tête ?' },
+            { nl: 'Twee keer per dag, na het eten.', fr: 'Deux fois par jour, après le repas.' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd30-apotheek2', nl: 'apotheek', fr: 'pharmacie', article: 'de' },
+        { id: 'd30-recept', nl: 'recept', fr: 'ordonnance / recette', article: 'het' },
+        { id: 'd30-medicijn', nl: 'medicijn', fr: 'médicament', article: 'het' },
+        { id: 'd30-pil', nl: 'pil', fr: 'comprimé', article: 'de' },
+        { id: 'd30-zalf', nl: 'zalf', fr: 'pommade', article: 'de' },
+        { id: 'd30-innemen', nl: 'innemen', fr: 'prendre (un médicament)' },
+        { id: 'd30-afspraakmaken', nl: 'een afspraak maken', fr: 'prendre rendez-vous' },
+        { id: 'd30-assistente', nl: 'assistente', fr: 'assistante', article: 'de' },
+        { id: 'd30-spreekuur', nl: 'spreekuur', fr: 'heures de consultation', article: 'het' },
+        { id: 'd30-verzekering', nl: 'verzekering', fr: 'assurance', article: 'de' },
+        { id: 'd30-tandarts', nl: 'tandarts', fr: 'dentiste', article: 'de' },
+        { id: 'd30-specialist', nl: 'specialist', fr: 'spécialiste', article: 'de' },
+        { id: 'd30-verwijzing', nl: 'verwijzing', fr: 'lettre de renvoi', article: 'de' },
+        { id: 'd30-spoed', nl: 'spoed', fr: 'urgence', article: 'de' },
+        { id: 'd30-dringend', nl: 'dringend', fr: 'urgent' },
+      ],
+      phrases: [
+        { id: 'd30-p1', nl: 'Ik wil graag een afspraak maken.', fr: 'Je voudrais prendre rendez-vous.' },
+        { id: 'd30-p2', nl: 'U spreekt met Uri Mallant.', fr: 'Uri Mallant à l’appareil.' },
+        { id: 'd30-p3', nl: 'Heeft u iets tegen hoofdpijn?', fr: 'Avez-vous quelque chose contre le mal de tête ?' },
+        { id: 'd30-p4', nl: 'Hoe vaak moet ik dit innemen?', fr: 'Combien de fois dois-je le prendre ?' },
+        { id: 'd30-p5', nl: 'Is het dringend genoeg voor vandaag?', fr: 'Est-ce assez urgent pour aujourd’hui ?' },
+        { id: 'd30-p6', nl: 'Kan het ook later op de dag?', fr: 'Est-ce possible plus tard dans la journée ?' },
+      ],
+      dialogue: {
+        title: 'Bellen naar de praktijk',
+        context: 'Ton premier appel téléphonique en néerlandais. Le vrai test.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Assistente', nl: 'Huisartsenpraktijk De Linden, met Marijke.', fr: 'Cabinet De Linden, Marijke à l’appareil.' },
+          { speaker: 'Uri', nl: 'Goedemorgen, u spreekt met Uri Mallant. Ik wil graag een afspraak maken.', fr: 'Bonjour, Uri Mallant à l’appareil. Je voudrais prendre rendez-vous.' },
+          { speaker: 'Assistente', nl: 'Waar gaat het over?', fr: 'De quoi s’agit-il ?' },
+          { speaker: 'Uri', nl: 'Ik heb al een week keelpijn en koorts.', fr: 'J’ai mal à la gorge et de la fièvre depuis une semaine.' },
+          { speaker: 'Assistente', nl: 'Kunt u vanmiddag om kwart over drie?', fr: 'Pouvez-vous cet après-midi à 15 h 15 ?' },
+          { speaker: 'Uri', nl: 'Kwart over drie... Dan werk ik nog. Kan het later?', fr: '15 h 15... Je travaille encore. Est-ce possible plus tard ?' },
+          { speaker: 'Assistente', nl: 'Half vijf is ook mogelijk.', fr: '16 h 30 est possible aussi.' },
+          { speaker: 'Uri', nl: 'Half vijf is prima. Wat is uw adres ook alweer?', fr: '16 h 30 c’est parfait. Quelle est votre adresse déjà ?' },
+          { speaker: 'Assistente', nl: 'Lindenstraat 14. Tot vanmiddag!', fr: 'Rue des Tilleuls 14. À cet après-midi !' },
+          { speaker: 'Uri', nl: 'Dank u wel, tot straks.', fr: 'Merci beaucoup, à tout à l’heure.' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Ouvre un appel téléphonique en te présentant.', accept: ['Goedemorgen, u spreekt met Uri Mallant'] },
+        { prompt: 'Demande un rendez-vous.', accept: ['Ik wil graag een afspraak maken'] },
+        { prompt: 'Refuse un horaire et demande plus tard.', accept: ['Dan werk ik nog, kan het later?'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J31 */
+    {
+      id: 'd31',
+      day: 31,
+      week: 5,
+      title: 'L’administration : commune, banque, contrats',
+      goal: 'Survivre au guichet et comprendre un courrier officiel.',
+      grammar: [
+        {
+          title: 'Le vocabulaire administratif néerlandais',
+          body:
+            "Quelques mots que tu croiseras dès la première semaine dans le pays :\n- **de gemeente** — la commune, où l'on s'inscrit\n- **het BSN** (burgerservicenummer) — le numéro de sécurité sociale, indispensable partout\n- **inschrijven** — s'inscrire · **uitschrijven** — se désinscrire\n- **de DigiD** — l'identifiant numérique national, sans lui rien n'est possible\n- **de zorgverzekering** — l'assurance santé, obligatoire\n- **de belasting** — l'impôt · **de toeslag** — l'allocation\n- **het formulier** — le formulaire · **invullen** — remplir\n- **de balie / het loket** — le guichet\n- **de handtekening** — la signature · **ondertekenen** — signer",
+          examples: [
+            { nl: 'Ik wil me inschrijven bij de gemeente.', fr: 'Je veux m’inscrire à la commune.' },
+            { nl: 'Kunt u dit formulier invullen?', fr: 'Pouvez-vous remplir ce formulaire ?' },
+          ],
+        },
+        {
+          title: 'La phrase à mémoriser au guichet',
+          body:
+            "Les guichets basculent immédiatement en anglais dès qu'ils entendent un accent. Cette phrase change la donne :\n**« Mag ik het in het Nederlands doen? Ik ben aan het leren. »** — Puis-je le faire en néerlandais ? Je suis en train d'apprendre.\nEt sa jumelle, quand ça devient trop technique :\n**« Kunt u dat in makkelijke woorden uitleggen? »** — Pouvez-vous l'expliquer en mots simples ?\nElles marchent presque toujours, et elles t'attirent de la bienveillance plutôt que de l'impatience.",
+          examples: [
+            { nl: 'Mag ik het in het Nederlands doen? Ik ben aan het leren.', fr: 'Puis-je le faire en néerlandais ? Je suis en train d’apprendre.' },
+            { nl: 'Kunt u dat in makkelijke woorden uitleggen?', fr: 'Pouvez-vous expliquer ça en mots simples ?' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd31-gemeente', nl: 'gemeente', fr: 'commune / mairie', article: 'de' },
+        { id: 'd31-loket', nl: 'loket', fr: 'guichet', article: 'het' },
+        { id: 'd31-formulier', nl: 'formulier', fr: 'formulaire', article: 'het' },
+        { id: 'd31-invullen', nl: 'invullen', fr: 'remplir' },
+        { id: 'd31-inschrijven', nl: 'inschrijven', fr: 's’inscrire' },
+        { id: 'd31-paspoort', nl: 'paspoort', fr: 'passeport', article: 'het' },
+        { id: 'd31-identiteitsbewijs', nl: 'identiteitsbewijs', fr: 'pièce d’identité', article: 'het' },
+        { id: 'd31-adres', nl: 'adres', fr: 'adresse', article: 'het' },
+        { id: 'd31-postcode', nl: 'postcode', fr: 'code postal', article: 'de' },
+        { id: 'd31-handtekening', nl: 'handtekening', fr: 'signature', article: 'de' },
+        { id: 'd31-bank', nl: 'bank', fr: 'banque', article: 'de' },
+        { id: 'd31-rekening2', nl: 'rekening', fr: 'compte / facture', article: 'de' },
+        { id: 'd31-contract', nl: 'contract', fr: 'contrat', article: 'het' },
+        { id: 'd31-belasting', nl: 'belasting', fr: 'impôt', article: 'de' },
+        { id: 'd31-verzekering2', nl: 'zorgverzekering', fr: 'assurance santé', article: 'de' },
+        { id: 'd31-aanvragen', nl: 'aanvragen', fr: 'faire une demande' },
+        { id: 'd31-nodighebben', nl: 'nodig hebben', fr: 'avoir besoin de' },
+        { id: 'd31-geldig', nl: 'geldig', fr: 'valable' },
+      ],
+      phrases: [
+        { id: 'd31-p1', nl: 'Ik wil me inschrijven bij de gemeente.', fr: 'Je veux m’inscrire à la commune.' },
+        { id: 'd31-p2', nl: 'Wat heb ik daarvoor nodig?', fr: 'De quoi ai-je besoin pour ça ?' },
+        { id: 'd31-p3', nl: 'Mag ik het in het Nederlands doen? Ik ben aan het leren.', fr: 'Puis-je le faire en néerlandais ? Je suis en train d’apprendre.' },
+        { id: 'd31-p4', nl: 'Kunt u dat in makkelijke woorden uitleggen?', fr: 'Pouvez-vous l’expliquer en mots simples ?' },
+        { id: 'd31-p5', nl: 'Hoe lang duurt de aanvraag?', fr: 'Combien de temps prend la demande ?' },
+        { id: 'd31-p6', nl: 'Ik heb een afspraak om tien uur.', fr: 'J’ai un rendez-vous à dix heures.' },
+      ],
+      dialogue: {
+        title: 'Aan de balie van de gemeente',
+        context: 'Inscription à la commune. Tu tiens bon en néerlandais.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Baliemedewerker', nl: 'Goedemorgen. Heeft u een afspraak?', fr: 'Bonjour. Avez-vous un rendez-vous ?' },
+          { speaker: 'Uri', nl: 'Ja, om tien uur, op naam van Mallant.', fr: 'Oui, à dix heures, au nom de Mallant.' },
+          { speaker: 'Baliemedewerker', nl: 'I can help you in English if you prefer.', fr: 'Je peux vous aider en anglais si vous préférez.' },
+          { speaker: 'Uri', nl: 'Mag ik het in het Nederlands doen? Ik ben aan het leren.', fr: 'Puis-je le faire en néerlandais ? Je suis en train d’apprendre.' },
+          { speaker: 'Baliemedewerker', nl: 'Natuurlijk, prima. Mag ik uw paspoort en huurcontract?', fr: 'Bien sûr, parfait. Puis-je avoir votre passeport et votre bail ?' },
+          { speaker: 'Uri', nl: 'Alstublieft. Heb ik nog iets anders nodig?', fr: 'Voilà. Ai-je besoin d’autre chose ?' },
+          { speaker: 'Baliemedewerker', nl: 'Nee. U krijgt uw BSN binnen twee weken per post.', fr: 'Non. Vous recevrez votre BSN sous deux semaines par courrier.' },
+          { speaker: 'Uri', nl: 'Sorry, wat betekent BSN precies?', fr: 'Pardon, que veut dire BSN exactement ?' },
+          { speaker: 'Baliemedewerker', nl: 'Uw burgerservicenummer. U heeft het overal voor nodig.', fr: 'Votre numéro de service citoyen. Vous en avez besoin partout.' },
+          { speaker: 'Uri', nl: 'Duidelijk. Dank u wel voor uw geduld.', fr: 'C’est clair. Merci pour votre patience.' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Demande à faire la démarche en néerlandais parce que tu apprends.', accept: ['Mag ik het in het Nederlands doen? Ik ben aan het leren'] },
+        { prompt: 'Demande de quoi tu as besoin pour ça.', accept: ['Wat heb ik daarvoor nodig?'] },
+        { prompt: 'Demande une explication en mots simples.', accept: ['Kunt u dat in makkelijke woorden uitleggen?'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J32 */
+    {
+      id: 'd32',
+      day: 32,
+      week: 5,
+      title: 'Le logement : signaler un problème',
+      goal: 'Expliquer une panne, demander une réparation, parler aux voisins.',
+      grammar: [
+        {
+          title: 'Le vocabulaire des ennuis domestiques',
+          body:
+            "- **kapot** — cassé, en panne. *De verwarming is kapot.*\n- **het doet het niet** — ça ne marche pas. Formule ultra-courante.\n- **lekken** — fuir. *Het dak lekt.* / **de lekkage** — la fuite\n- **verstopt** — bouché. *De afvoer is verstopt.*\n- **de storing** — la panne (électricité, internet)\n- **repareren / maken** — réparer. *Kunt u het komen maken?*\n- **de huisbaas / de verhuurder** — le propriétaire · **de huurder** — le locataire\n- **de huur** — le loyer · **de borg** — la caution · **de servicekosten** — les charges",
+          examples: [
+            { nl: 'De verwarming doet het niet.', fr: 'Le chauffage ne fonctionne pas.' },
+            { nl: 'Er is een lekkage in de badkamer.', fr: 'Il y a une fuite dans la salle de bain.' },
+          ],
+        },
+        {
+          title: 'Se plaindre poliment mais fermement',
+          body:
+            "Le néerlandais direct n'est pas agressif : il est explicite. Sois clair sur le problème, la date et l'attente.\n- *Ik bel over een probleem in mijn appartement.*\n- *Het is nu al een week zo.*\n- *Kunt u iemand sturen?* — Pouvez-vous envoyer quelqu'un ?\n- *Wanneer kan ik iemand verwachten?* — Quand puis-je attendre quelqu'un ?\n- *Ik hoop dat het snel opgelost kan worden.* — J'espère que ça pourra être résolu vite.\nAvec les voisins, l'atténuateur **even** et le mot **hoor** adoucissent tout : *Zou je de muziek even zachter kunnen zetten?*",
+          examples: [
+            { nl: 'Kunt u iemand sturen?', fr: 'Pouvez-vous envoyer quelqu’un ?' },
+            { nl: 'Zou je de muziek wat zachter kunnen zetten?', fr: 'Pourrais-tu baisser un peu la musique ?' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd32-huur', nl: 'huur', fr: 'loyer', article: 'de' },
+        { id: 'd32-huurbaas', nl: 'huisbaas', fr: 'propriétaire', article: 'de' },
+        { id: 'd32-borg', nl: 'borg', fr: 'caution', article: 'de' },
+        { id: 'd32-verwarming', nl: 'verwarming', fr: 'chauffage', article: 'de' },
+        { id: 'd32-kapot', nl: 'kapot', fr: 'cassé / en panne' },
+        { id: 'd32-lekkage', nl: 'lekkage', fr: 'fuite', article: 'de' },
+        { id: 'd32-verstopt', nl: 'verstopt', fr: 'bouché' },
+        { id: 'd32-storing', nl: 'storing', fr: 'panne', article: 'de' },
+        { id: 'd32-repareren', nl: 'repareren', fr: 'réparer' },
+        { id: 'd32-monteur', nl: 'monteur', fr: 'technicien', article: 'de' },
+        { id: 'd32-sleutel', nl: 'sleutel', fr: 'clé', article: 'de', plural: 'sleutels' },
+        { id: 'd32-licht', nl: 'licht', fr: 'lumière', article: 'het' },
+        { id: 'd32-elektriciteit', nl: 'elektriciteit', fr: 'électricité', article: 'de' },
+        { id: 'd32-lawaai', nl: 'lawaai', fr: 'bruit', article: 'het' },
+        { id: 'd32-klagen', nl: 'klagen', fr: 'se plaindre' },
+        { id: 'd32-oplossen', nl: 'oplossen', fr: 'résoudre' },
+        { id: 'd32-zachter', nl: 'zachter', fr: 'plus doucement' },
+        { id: 'd32-vuilnis', nl: 'vuilnis', fr: 'poubelles', article: 'het' },
+      ],
+      phrases: [
+        { id: 'd32-p1', nl: 'De verwarming doet het niet.', fr: 'Le chauffage ne fonctionne pas.' },
+        { id: 'd32-p2', nl: 'Er is een lekkage in de badkamer.', fr: 'Il y a une fuite dans la salle de bain.' },
+        { id: 'd32-p3', nl: 'Kunt u iemand sturen?', fr: 'Pouvez-vous envoyer quelqu’un ?' },
+        { id: 'd32-p4', nl: 'Het is nu al een week zo.', fr: 'C’est comme ça depuis une semaine déjà.' },
+        { id: 'd32-p5', nl: 'Zou je de muziek wat zachter kunnen zetten?', fr: 'Pourrais-tu baisser un peu la musique ?' },
+        { id: 'd32-p6', nl: 'Wanneer kan ik iemand verwachten?', fr: 'Quand puis-je attendre quelqu’un ?' },
+      ],
+      dialogue: {
+        title: 'De huisbaas bellen',
+        context: 'Le chauffage est en panne depuis une semaine. Tu appelles le propriétaire.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Huisbaas', nl: 'Met Van Dijk.', fr: 'Van Dijk à l’appareil.' },
+          { speaker: 'Uri', nl: 'Goedemiddag, u spreekt met Uri Mallant, van de Lindenstraat 14.', fr: 'Bonjour, Uri Mallant à l’appareil, rue des Tilleuls 14.' },
+          { speaker: 'Huisbaas', nl: 'Ah ja. Wat kan ik voor u doen?', fr: 'Ah oui. Que puis-je faire pour vous ?' },
+          { speaker: 'Uri', nl: 'De verwarming doet het niet. Het is nu al een week zo.', fr: 'Le chauffage ne fonctionne pas. C’est comme ça depuis une semaine.' },
+          { speaker: 'Huisbaas', nl: 'Heeft u de druk gecontroleerd?', fr: 'Avez-vous vérifié la pression ?' },
+          { speaker: 'Uri', nl: 'Ja, dat heb ik geprobeerd. Er verandert niets.', fr: 'Oui, j’ai essayé. Rien ne change.' },
+          { speaker: 'Huisbaas', nl: 'Dan stuur ik een monteur. Bent u donderdag thuis?', fr: 'Alors j’envoie un technicien. Êtes-vous chez vous jeudi ?' },
+          { speaker: 'Uri', nl: 'Donderdag werk ik. Kan het vrijdagochtend?', fr: 'Jeudi je travaille. C’est possible vendredi matin ?' },
+          { speaker: 'Huisbaas', nl: 'Vrijdag tussen negen en twaalf.', fr: 'Vendredi entre neuf heures et midi.' },
+          { speaker: 'Uri', nl: 'Prima, dan ben ik thuis. Dank u wel.', fr: 'Parfait, je serai chez moi. Merci beaucoup.' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Signale que le chauffage ne fonctionne pas depuis une semaine.', accept: ['De verwarming doet het niet, het is nu al een week zo'] },
+        { prompt: 'Demande qu’on envoie quelqu’un.', accept: ['Kunt u iemand sturen?'] },
+        { prompt: 'Demande poliment à ton voisin de baisser la musique.', accept: ['Zou je de muziek wat zachter kunnen zetten?'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J33 */
+    {
+      id: 'd33',
+      day: 33,
+      week: 5,
+      title: 'Au téléphone',
+      goal: 'Tenir un appel sans visage ni gestes — l’exercice le plus dur.',
+      grammar: [
+        {
+          title: 'Le protocole téléphonique néerlandais',
+          body:
+            "**Décrocher** : on annonce son nom, toujours. *Met Uri.* / *Met Mallant.*\n**Se présenter en appelant** : *U spreekt met Uri Mallant.* ou simplement *Met Uri.*\n**Demander quelqu'un** : *Mag ik … spreken?* / *Is … aanwezig?*\n**Patienter** : *Een moment, ik verbind u door.* — Un instant, je vous passe.\n**Absence** : *Hij is er even niet. Kan ik iets doorgeven?* — Il n'est pas là. Puis-je transmettre un message ?\n**Laisser un message** : *Wilt u vragen of hij mij terugbelt?* — Pouvez-vous lui demander de me rappeler ?\n**Mauvaise réception** : *Ik versta u slecht, kunt u iets harder praten?*\n**Raccrocher** : *Bedankt, fijne dag. Tot ziens.*",
+          examples: [
+            { nl: 'Met Uri.', fr: 'Uri à l’appareil.' },
+            { nl: 'Mag ik mevrouw De Vries spreken?', fr: 'Puis-je parler à madame De Vries ?' },
+            { nl: 'Wilt u vragen of hij mij terugbelt?', fr: 'Pouvez-vous lui demander de me rappeler ?' },
+          ],
+        },
+        {
+          title: 'Épeler et confirmer',
+          body:
+            "Au téléphone on te demandera d'épeler ton nom : *Kunt u dat spellen?*\nQuelques lettres à connaître en néerlandais : **a** (aa), **e** (é), **i** (i), **j** (yé), **g** (ghé), **h** (haa), **u** (ü), **v** (fé), **w** (vé), **y** (i-grec / Griekse ij), **ij** (lange ij).\nPour confirmer un chiffre ou une lettre : *Is dat met een d als in Dirk?*\nEt la formule de vérification : *Klopt dat?* — C'est bien ça ?",
+          examples: [
+            { nl: 'Kunt u uw naam spellen?', fr: 'Pouvez-vous épeler votre nom ?' },
+            { nl: 'Klopt dat?', fr: 'C’est bien ça ?' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd33-bellen', nl: 'bellen', fr: 'appeler' },
+        { id: 'd33-telefoon', nl: 'telefoon', fr: 'téléphone', article: 'de' },
+        { id: 'd33-opnemen', nl: 'opnemen', fr: 'décrocher' },
+        { id: 'd33-ophangen', nl: 'ophangen', fr: 'raccrocher' },
+        { id: 'd33-doorverbinden', nl: 'doorverbinden', fr: 'transférer (un appel)' },
+        { id: 'd33-doorgeven', nl: 'doorgeven', fr: 'transmettre' },
+        { id: 'd33-bericht', nl: 'bericht', fr: 'message', article: 'het' },
+        { id: 'd33-voicemail', nl: 'voicemail', fr: 'répondeur', article: 'de' },
+        { id: 'd33-spellen', nl: 'spellen', fr: 'épeler' },
+        { id: 'd33-harder', nl: 'harder', fr: 'plus fort' },
+        { id: 'd33-verbinding', nl: 'verbinding', fr: 'connexion / ligne', article: 'de' },
+        { id: 'd33-moment', nl: 'moment', fr: 'instant', article: 'het' },
+        { id: 'd33-aanwezig', nl: 'aanwezig', fr: 'présent' },
+        { id: 'd33-afwezig', nl: 'afwezig', fr: 'absent' },
+        { id: 'd33-nummer', nl: 'nummer', fr: 'numéro', article: 'het' },
+      ],
+      phrases: [
+        { id: 'd33-p1', nl: 'Met Uri Mallant.', fr: 'Uri Mallant à l’appareil.' },
+        { id: 'd33-p2', nl: 'Mag ik mevrouw De Vries spreken?', fr: 'Puis-je parler à madame De Vries ?' },
+        { id: 'd33-p3', nl: 'Ik versta u slecht, kunt u iets harder praten?', fr: 'Je vous entends mal, pouvez-vous parler plus fort ?' },
+        { id: 'd33-p4', nl: 'Wilt u vragen of hij mij terugbelt?', fr: 'Pouvez-vous lui demander de me rappeler ?' },
+        { id: 'd33-p5', nl: 'Kunt u uw naam spellen?', fr: 'Pouvez-vous épeler votre nom ?' },
+        { id: 'd33-p6', nl: 'Een moment, ik verbind u door.', fr: 'Un instant, je vous transfère.' },
+      ],
+      dialogue: {
+        title: 'Een telefoontje naar kantoor',
+        context: 'Tu appelles un bureau et la personne recherchée est absente.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Receptie', nl: 'Bureau Van Leeuwen, goedemorgen.', fr: 'Bureau Van Leeuwen, bonjour.' },
+          { speaker: 'Uri', nl: 'Goedemorgen, u spreekt met Uri Mallant. Mag ik meneer Bakker spreken?', fr: 'Bonjour, Uri Mallant à l’appareil. Puis-je parler à monsieur Bakker ?' },
+          { speaker: 'Receptie', nl: 'Een moment... Hij is er even niet. Kan ik iets doorgeven?', fr: 'Un instant... Il n’est pas là. Puis-je transmettre un message ?' },
+          { speaker: 'Uri', nl: 'Graag. Wilt u vragen of hij mij terugbelt?', fr: 'Volontiers. Pouvez-vous lui demander de me rappeler ?' },
+          { speaker: 'Receptie', nl: 'Zeker. Wat is uw nummer?', fr: 'Certainement. Quel est votre numéro ?' },
+          { speaker: 'Uri', nl: 'Nul zes, twee vier, acht negen, één drie, vijf zeven.', fr: 'Zéro six, deux quatre, huit neuf, un trois, cinq sept.' },
+          { speaker: 'Receptie', nl: 'En hoe schrijft u uw achternaam?', fr: 'Et comment écrivez-vous votre nom de famille ?' },
+          { speaker: 'Uri', nl: 'M-A-L-L-A-N-T. Met twee L’en.', fr: 'M-A-L-L-A-N-T. Avec deux L.' },
+          { speaker: 'Receptie', nl: 'Genoteerd. Hij belt u vandaag nog terug.', fr: 'Noté. Il vous rappelle encore aujourd’hui.' },
+          { speaker: 'Uri', nl: 'Dank u wel. Fijne dag verder!', fr: 'Merci beaucoup. Bonne journée !' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Décroche le téléphone à la néerlandaise.', accept: ['Met Uri', 'Met Uri Mallant'] },
+        { prompt: 'Demande à parler à monsieur Bakker.', accept: ['Mag ik meneer Bakker spreken?'] },
+        { prompt: 'Demande qu’on te rappelle.', accept: ['Wilt u vragen of hij mij terugbelt?'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J34 */
+    {
+      id: 'd34',
+      day: 34,
+      week: 5,
+      title: 'Le futur et les projets',
+      goal: 'Parler de demain, de l’an prochain, de ce que tu comptes faire.',
+      grammar: [
+        {
+          title: 'Trois façons de parler du futur',
+          body:
+            "1. **Le présent + un mot de temps** — de loin le plus fréquent à l'oral.\n   *Morgen **ga** ik naar Rotterdam.* — Demain je vais à Rotterdam.\n2. **gaan + infinitif** — pour une intention, un projet concret.\n   *Ik **ga** volgend jaar Nederlands **studeren**.*\n3. **zullen + infinitif** — plus formel, ou pour une promesse / une proposition.\n   *Ik **zal** het morgen **doen**.* — Je le ferai demain.\n   *Zullen we…?* reste la formule d'invitation.\nÉvite de surcharger avec *zullen* : le présent suffit presque toujours.",
+          examples: [
+            { nl: 'Volgende week ga ik naar Parijs.', fr: 'La semaine prochaine je vais à Paris.' },
+            { nl: 'Ik ga volgend jaar een cursus doen.', fr: 'Je vais faire un cours l’an prochain.' },
+            { nl: 'Ik zal je morgen bellen.', fr: 'Je t’appellerai demain.' },
+          ],
+        },
+        {
+          title: 'Le conditionnel poli : zou',
+          body:
+            "**zou / zouden** est l'équivalent de notre conditionnel. Il sert surtout à **adoucir**.\n- *Ik **zou** graag een afspraak **willen** maken.* — Je voudrais prendre rendez-vous. (très poli)\n- ***Zou** u mij **kunnen** helpen?* — Pourriez-vous m'aider ?\n- *Dat **zou** leuk **zijn**.* — Ce serait sympa.\nRemarque la structure : **zou** en position 2, **tous les infinitifs à la fin**, dans l'ordre modal puis verbe principal.",
+          examples: [
+            { nl: 'Zou u mij kunnen helpen?', fr: 'Pourriez-vous m’aider ?' },
+            { nl: 'Dat zou heel fijn zijn.', fr: 'Ce serait très bien.' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd34-volgende', nl: 'volgende', fr: 'prochain' },
+        { id: 'd34-straks', nl: 'straks', fr: 'tout à l’heure' },
+        { id: 'd34-zometeen', nl: 'zo meteen', fr: 'dans un instant' },
+        { id: 'd34-overmorgen', nl: 'overmorgen', fr: 'après-demain' },
+        { id: 'd34-toekomst', nl: 'toekomst', fr: 'avenir', article: 'de' },
+        { id: 'd34-vakantie', nl: 'vakantie', fr: 'vacances', article: 'de' },
+        { id: 'd34-reis', nl: 'reis', fr: 'voyage', article: 'de' },
+        { id: 'd34-verhuizen2', nl: 'verhuizen', fr: 'déménager' },
+        { id: 'd34-solliciteren', nl: 'solliciteren', fr: 'postuler' },
+        { id: 'd34-cursus', nl: 'cursus', fr: 'cours', article: 'de' },
+        { id: 'd34-examen', nl: 'examen', fr: 'examen', article: 'het' },
+        { id: 'd34-hopen', nl: 'hopen', fr: 'espérer' },
+        { id: 'd34-vanplan', nl: 'van plan zijn', fr: 'avoir l’intention de' },
+        { id: 'd34-beloven', nl: 'beloven', fr: 'promettre' },
+        { id: 'd34-waarschijnlijk', nl: 'waarschijnlijk', fr: 'probablement' },
+        { id: 'd34-zeker2', nl: 'zeker weten', fr: 'être certain' },
+      ],
+      phrases: [
+        { id: 'd34-p1', nl: 'Volgende week ga ik naar Parijs.', fr: 'La semaine prochaine je vais à Paris.' },
+        { id: 'd34-p2', nl: 'Ik ben van plan om een cursus te doen.', fr: 'J’ai l’intention de suivre un cours.' },
+        { id: 'd34-p3', nl: 'Zou u mij kunnen helpen?', fr: 'Pourriez-vous m’aider ?' },
+        { id: 'd34-p4', nl: 'Ik zal je morgen bellen.', fr: 'Je t’appellerai demain.' },
+        { id: 'd34-p5', nl: 'Ik hoop dat het lukt.', fr: 'J’espère que ça va marcher.' },
+        { id: 'd34-p6', nl: 'Wat ga je in de vakantie doen?', fr: 'Que vas-tu faire pendant les vacances ?' },
+      ],
+      dialogue: {
+        title: 'Plannen voor volgend jaar',
+        context: 'Une conversation tournée vers l’avenir. Tous les temps du futur y passent.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Fleur', nl: 'Blijf je volgend jaar in Nederland?', fr: 'Tu restes aux Pays-Bas l’an prochain ?' },
+          { speaker: 'Uri', nl: 'Ja, ik denk het wel. Ik ben van plan om te blijven.', fr: 'Oui, je pense bien. J’ai l’intention de rester.' },
+          { speaker: 'Fleur', nl: 'En ga je een cursus Nederlands doen?', fr: 'Et tu vas suivre un cours de néerlandais ?' },
+          { speaker: 'Uri', nl: 'Waarschijnlijk. Eerst wil ik zelf verder oefenen.', fr: 'Probablement. D’abord je veux continuer à m’entraîner seul.' },
+          { speaker: 'Fleur', nl: 'Doe je dan ook examen?', fr: 'Tu passeras un examen aussi ?' },
+          { speaker: 'Uri', nl: 'Misschien over een jaar. Ik zal eerst B1 halen.', fr: 'Peut-être dans un an. Je vais d’abord atteindre le B1.' },
+          { speaker: 'Fleur', nl: 'Dat lukt je wel. Zou je hulp willen?', fr: 'Tu vas y arriver. Tu voudrais de l’aide ?' },
+          { speaker: 'Uri', nl: 'Graag! Zullen we elke week een half uur praten?', fr: 'Volontiers ! On parle une demi-heure chaque semaine ?' },
+          { speaker: 'Fleur', nl: 'Afgesproken. Alleen Nederlands, geen Engels.', fr: 'Marché conclu. Seulement néerlandais, pas d’anglais.' },
+          { speaker: 'Uri', nl: 'Dat beloof ik. Dat zou heel fijn zijn.', fr: 'Je le promets. Ce serait très bien.' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Dis ce que tu vas faire la semaine prochaine.', accept: ['Volgende week ga ik naar Parijs'] },
+        { prompt: 'Demande poliment de l’aide avec « zou ».', accept: ['Zou u mij kunnen helpen?'] },
+        { prompt: 'Dis que tu as l’intention de rester aux Pays-Bas.', accept: ['Ik ben van plan om in Nederland te blijven'] },
+      ],
+    },
+
+    /* ------------------------------------------------------------ J35 */
+    {
+      id: 'd35',
+      day: 35,
+      week: 5,
+      title: 'Révision semaine 5 — les urgences du quotidien',
+      goal: 'Réagir vite dans les trois situations qui stressent : santé, guichet, panne.',
+      grammar: [
+        {
+          title: 'Les phrases à avoir en réflexe',
+          body:
+            "Récapitulatif à apprendre par cœur, dans cet ordre. Tu dois pouvoir les sortir sans réfléchir.\n**Santé** : *Ik voel me niet lekker. Ik heb … pijn. Sinds … dagen. Ik ben allergisch voor …*\n**Téléphone** : *U spreekt met … Mag ik … spreken? Wilt u vragen of hij mij terugbelt?*\n**Guichet** : *Mag ik het in het Nederlands doen? Wat heb ik daarvoor nodig? Kunt u dat in makkelijke woorden uitleggen?*\n**Panne** : *Het doet het niet. Het is al een week zo. Kunt u iemand sturen?*\n**Urgence réelle** : *Er is een ongeluk gebeurd. Bel 112. Ik heb hulp nodig.*",
+          examples: [
+            { nl: 'Ik heb hulp nodig.', fr: 'J’ai besoin d’aide.' },
+            { nl: 'Er is een ongeluk gebeurd.', fr: 'Il y a eu un accident.' },
+          ],
+        },
+      ],
+      vocab: [
+        { id: 'd35-hulp', nl: 'hulp', fr: 'aide', article: 'de' },
+        { id: 'd35-ongeluk', nl: 'ongeluk', fr: 'accident', article: 'het' },
+        { id: 'd35-brandweer', nl: 'brandweer', fr: 'pompiers', article: 'de' },
+        { id: 'd35-politie', nl: 'politie', fr: 'police', article: 'de' },
+        { id: 'd35-ambulance', nl: 'ambulance', fr: 'ambulance', article: 'de' },
+        { id: 'd35-gevaarlijk', nl: 'gevaarlijk', fr: 'dangereux' },
+        { id: 'd35-voorzichtig', nl: 'voorzichtig', fr: 'prudent' },
+        { id: 'd35-gebeuren', nl: 'gebeuren', fr: 'se passer / arriver' },
+        { id: 'd35-gestolen', nl: 'gestolen', fr: 'volé' },
+        { id: 'd35-kwijt', nl: 'kwijt', fr: 'perdu / égaré' },
+        { id: 'd35-aangifte', nl: 'aangifte', fr: 'déclaration (police)', article: 'de' },
+        { id: 'd35-portemonnee', nl: 'portemonnee', fr: 'portefeuille', article: 'de' },
+        { id: 'd35-rustigblijven', nl: 'rustig blijven', fr: 'rester calme' },
+      ],
+      phrases: [
+        { id: 'd35-p1', nl: 'Ik heb hulp nodig.', fr: 'J’ai besoin d’aide.' },
+        { id: 'd35-p2', nl: 'Mijn portemonnee is gestolen.', fr: 'On m’a volé mon portefeuille.' },
+        { id: 'd35-p3', nl: 'Ik wil aangifte doen.', fr: 'Je veux faire une déclaration.' },
+        { id: 'd35-p4', nl: 'Er is een ongeluk gebeurd.', fr: 'Il y a eu un accident.' },
+        { id: 'd35-p5', nl: 'Ik ben mijn telefoon kwijt.', fr: 'J’ai perdu mon téléphone.' },
+      ],
+      dialogue: {
+        title: 'Op het politiebureau',
+        context: 'Ton téléphone a disparu dans le tram. Tu vas déclarer le vol.',
+        learnerRole: 'Uri',
+        lines: [
+          { speaker: 'Agent', nl: 'Goedemiddag. Waarmee kan ik u helpen?', fr: 'Bonjour. En quoi puis-je vous aider ?' },
+          { speaker: 'Uri', nl: 'Ik wil aangifte doen. Mijn telefoon is gestolen.', fr: 'Je veux faire une déclaration. On m’a volé mon téléphone.' },
+          { speaker: 'Agent', nl: 'Waar en wanneer is dat gebeurd?', fr: 'Où et quand cela s’est-il passé ?' },
+          { speaker: 'Uri', nl: 'Vanmorgen, rond half negen, in tram vier.', fr: 'Ce matin, vers 8 h 30, dans le tram quatre.' },
+          { speaker: 'Agent', nl: 'Heeft u iets gezien of gemerkt?', fr: 'Avez-vous vu ou remarqué quelque chose ?' },
+          { speaker: 'Uri', nl: 'Nee. Het was heel druk. Ik merkte het pas later.', fr: 'Non. C’était très bondé. Je ne m’en suis aperçu que plus tard.' },
+          { speaker: 'Agent', nl: 'Wat voor telefoon was het?', fr: 'Quel genre de téléphone était-ce ?' },
+          { speaker: 'Uri', nl: 'Een zwarte, met een blauw hoesje. Ik heb het nummer hier.', fr: 'Un noir, avec une coque bleue. J’ai le numéro ici.' },
+          { speaker: 'Agent', nl: 'Prima. Ik maak een proces-verbaal. Heeft u een BSN?', fr: 'Parfait. Je rédige un procès-verbal. Avez-vous un BSN ?' },
+          { speaker: 'Uri', nl: 'Ja, momentje. Sorry, mijn Nederlands is nog niet perfect.', fr: 'Oui, un instant. Désolé, mon néerlandais n’est pas encore parfait.' },
+        ],
+      },
+      speaking: [
+        { prompt: 'Dis que tu veux faire une déclaration de vol.', accept: ['Ik wil aangifte doen, mijn telefoon is gestolen'] },
+        { prompt: 'Dis quand c’est arrivé : ce matin vers 8 h 30.', accept: ['Vanmorgen rond half negen'] },
+        { prompt: 'Demande de l’aide clairement.', accept: ['Ik heb hulp nodig'] },
+      ],
+    },
+  ],
+}
